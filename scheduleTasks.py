@@ -41,7 +41,7 @@ def run_proc(channelName):
     cmd = "./recorder_local --appId YOUR APPID --channel {0} --appliteDir ../../bin --channelKey {1} --idle 6000 &".format(channelName, ChannelKey)
     print time.strftime("%Y-%m-%d %H:%M:%S")
     print cmd
-#    os.system(cmd)
+    os.system(cmd)
 
 if __name__ == '__main__':
     loadConfig()
